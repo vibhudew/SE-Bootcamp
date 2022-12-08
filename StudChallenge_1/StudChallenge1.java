@@ -32,10 +32,8 @@ class StudChallenge1{
                 return 1000;
             }
 		   
-
-		// for invalid inputs 
-
-            return -1;
+	    // for invalid inputs 
+	    return -1;
 
     }
 
