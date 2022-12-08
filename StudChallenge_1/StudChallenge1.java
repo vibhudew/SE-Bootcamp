@@ -33,7 +33,7 @@ class StudChallenge1{
             }
 		   
 
-		// error
+		// for invalid inputs 
 
             return -1;
 
