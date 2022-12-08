@@ -45,27 +45,23 @@ class StudChallenge1{
 
        //loop iterate over the string (given roman numeral)  
        //getting value from symbol s1[i] 
-  
-        for (int i = 0; i < s.length(); i++) {
+       for (int i = 0; i < s.length(); i++) {
            
             int s1 = value(s.charAt(i));
  
- 
             //getting value of symbol s2[i+1]  
-   
             if (i + 1 < s.length()) {
                 int s2 = value(s.charAt(i + 1));
  
                 //comparing the current symbol from its right symbol   
-
                 if (s1 >= s2) {
                     res = res + s1; //if the value of current symbol is greater or equal to the next symbol  
 
                 }
+
                 else {
                  // Value of current symbol is
                 // less than the next symbol
-
                     res = res + s2 - s1;
                     i++;
                 }
@@ -92,3 +88,4 @@ class StudChallenge1{
     }
 
 }
+
