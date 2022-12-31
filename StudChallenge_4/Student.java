@@ -49,8 +49,12 @@ public abstract class Student{ //Base class
         }
     };
 
+    public static void main(String[] args){
+        // main method
 
 
+
+    }
 
 }
 
