@@ -26,8 +26,8 @@ public class GrossSalaryCalculator {
         // Calculate the basic salary by multiplying the per day payment by the number of days
         double basicSalary = perDayPayment * noOfDays;
 
-	   // to acccess the values of the variables and modify by multiple threads; array with a size of 1
-	   // to ensure array cannot be reassigned to a different memory location but the value of the elements inside the array can be modified; final
+	// to acccess the values of the variables and modify by multiple threads; array with a size of 1
+	// to ensure array cannot be reassigned to a different memory location but the value of the elements inside the array can be modified; final
 
         final double[] allowances = new double[1];
         final double[] epf = new double[1];
