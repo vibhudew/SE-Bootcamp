@@ -32,6 +32,8 @@ public class GrossSalaryCalculator {
         // Declare variable to store the employer contribution
         double[] employerContribution = new double[1];
 
+        // METHOD 1 - Using a lambda expression to create the threads
+        
         // Create a thread to calculate the allowances
         Thread t2 = new Thread(() -> {
             // Calculate the allowances by multiplying the basic salary by 5%
