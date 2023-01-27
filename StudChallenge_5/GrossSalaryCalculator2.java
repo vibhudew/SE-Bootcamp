@@ -28,6 +28,8 @@ public class GrossSalaryCalculator2 {
         
         // Declare the arrays as final so that they can be accessed within the anonymous inner classes(the Runnable classes within the Thread constructors)
 
+        // to acccess the values of the variables and modify by multiple threads; array with a size of 1
+	    // to ensure array cannot be reassigned to a different memory location but the value of the elements inside the array can be modified; final
         final double[] allowances = new double[1];
         final double[] epf = new double[1];
         final double[] employerContribution = new double[1];

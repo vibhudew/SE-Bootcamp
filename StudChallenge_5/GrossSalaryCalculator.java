@@ -25,14 +25,15 @@ public class GrossSalaryCalculator {
         
         // Calculate the basic salary by multiplying the per day payment by the number of days
         double basicSalary = perDayPayment * noOfDays;
-        // Declare variable to store the allowances
-        double[] allowances = new double[1];
-        // Declare variable to store the employee provident fund (EPF) contribution
-        double[] epf = new double[1];
-        // Declare variable to store the employer contribution
-        double[] employerContribution = new double[1];
 
-        // METHOD 1 - Using a lambda expression to create the threads
+	   // to acccess the values of the variables and modify by multiple threads; array with a size of 1
+	   // to ensure array cannot be reassigned to a different memory location but the value of the elements inside the array can be modified; final
+
+        final double[] allowances = new double[1];
+        final double[] epf = new double[1];
+        final double[] employerContribution = new double[1];
+
+        // METHOD 1 - Using lambda expressions to create threads
         
         // Create a thread to calculate the allowances
         Thread t2 = new Thread(() -> {
