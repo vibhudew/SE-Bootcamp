@@ -32,6 +32,8 @@ public class GrossSalaryCalculator2 {
         final double[] epf = new double[1];
         final double[] employerContribution = new double[1];
 
+        // METHOD 2 -  Using anonymous inner classes to create threads
+        
         // Create a thread to calculate the allowances
         Thread t2 = new Thread(new Runnable() {
             public void run() {
